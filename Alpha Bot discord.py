@@ -15,15 +15,15 @@ async def on_message(message):
     if message.content.startswith("/test"):
        return
     
-    if message.content.startswith("Salam aleykum"):
-        await message.channel.send("Wa aleykum salam wa rahmatullahi wa barakatuh")
+    if message.content.startswith("Salut"):
+        await message.channel.send("Salut, comment vas-tu ?")
     
-    if message.content.startswith("Cv ?"):
-        await message.channel.send("Je vais bien hamdulillah et toi ?")
+    if message.content.startswith("Ca va ?"):
+        await message.channel.send("Je vais bien et toi ?")
 
 @client.command()
 async def hello(ctx):
-    await ctx.send("Salam aleykum je suis Alpha, le Fox Bot")
+    await ctx.send("Salut je suis Alpha, le Fox Bot")
 
 
 
